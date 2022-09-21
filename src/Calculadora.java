@@ -7,12 +7,7 @@ public class Calculadora {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		int numero1, numero2, resultado;
-		
-		
-		//somar, subtrair, dividir e multiplicar
-		
-		
+		int numero1, numero2, resultado;		
 		
 		System.out.println("Seja bem vindo a culculadora:");
 		System.out.println("1 - Soma");
@@ -23,79 +18,50 @@ public class Calculadora {
 		System.out.println("Digite um número para fazer uma operação");
 		int escolha = sc.nextInt();
 		
-		int contador = 0;
+		switch (escolha) {
 		
-		while(contador == 0) {
-			if (escolha == 1) {
-				System.out.print("Digite um número:");
-				numero1 = sc.nextInt();
-				System.out.print("Digite o segundo número:");
-				 numero2 = sc.nextInt();
-				 resultado = numero1 + numero2;
-				System.out.printf("A soma de %d + %d é igual: %d", numero1, numero2, resultado);
-			}
-			contador++;
-			System.out.println("Volte sempre");
-			
-		}
-		
-//		switch (escolha) {
-//		
-//		case 1: 
-//			System.out.print("Digite um número:");
-//			numero1 = sc.nextInt();
-//			System.out.print("Digite o segundo número:");
-//			 numero2 = sc.nextInt();
-//			 resultado = numero1 + numero2;
-//			System.out.printf("A soma de %d + %d é igual: %d", numero1, numero2, resultado);
-//			break;
-//			
-//		case 2:
-//			System.out.print("Digite um número:");
-//			 numero1 = sc.nextInt();
-//			System.out.print("Digite o segundo número:");
-//			 numero2 = sc.nextInt();
-//			 resultado = numero1 + numero2;
-//			System.out.printf("A soma de %d + %d é igual: %d", numero1, numero2, resultado);
-//			break;
-//			
-//		case 3:
-//			System.out.print("Digite um número:");
-//			 numero1 = sc.nextInt();
-//			System.out.print("Digite o segundo número:");
-//			 numero2 = sc.nextInt();
-//			 resultado = numero1 + numero2;
-//			System.out.printf("A soma de %d + %d é igual: %d", numero1, numero2, resultado);
-//			break;
-//			
-//		case 4:
-//			System.out.print("Digite um número:");
-//			 numero1 = sc.nextInt();
-//			System.out.print("Digite o segundo número:");
-//			 numero2 = sc.nextInt();
-//			 resultado = numero1 + numero2;
-//			System.out.printf("A soma de %d + %d é igual: %d", numero1, numero2, resultado);
-//			break;
-//			
-//		default:
-//			System.out.println("Nenhuma opcao valida");
-//		};
-		
-		
-	}
-
+		case 1: 
+			System.out.print("Digite um número:");
+			numero1 = sc.nextInt();
+			System.out.print("Digite o segundo número:");
+			numero2 = sc.nextInt();
+			resultado = numero1 + numero2;
+			System.out.printf("A soma de %d + %d é igual: %d", numero1, numero2, resultado);
+			break;
 	
+		case 2:
+			System.out.print("Digite um número:");
+			numero1 = sc.nextInt();
+			System.out.print("Digite o segundo número:");
+			numero2 = sc.nextInt();
+			resultado = numero1 - numero2;
+			System.out.printf("A subitração de %d - %d é igual: %d", numero1, numero2, resultado);
+			break;
+	
+		case 3:
+			System.out.print("Digite um número:");
+			numero1 = sc.nextInt();
+			System.out.print("Digite o segundo número:");
+			numero2 = sc.nextInt();
+			resultado = numero1 * numero2;
+			System.out.printf("A multiplicação de %d x %d é igual: %d", numero1, numero2, resultado);
+			break;
+	
+		case 4:
+			System.out.print("Digite um número:");
+			numero1 = sc.nextInt();
+			System.out.print("Digite o segundo número:");
+			numero2 = sc.nextInt();
+			resultado = numero1 / numero2;
+			System.out.printf("A divisão de %d / %d é igual: %d", numero1, numero2, resultado);
+			break;
+	
+		default:
+			System.out.println("Nenhuma opcao valida");
+		};
+	}	
 }
 
-
-		
-	
-	//switch ()
-			//case 1
-			
-				
-			//}
-			//default
 		
 
 	
